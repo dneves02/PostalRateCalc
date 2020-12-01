@@ -23,7 +23,9 @@ function calculateCost(type, weight) {
     } else if (type == "first-class") {
       cost = 
     }
-    var cost = $('#cost');  */
+    var cost = $('#cost');
+    cost.empty();
+    cost.append();  */
 }
 
 /* 
