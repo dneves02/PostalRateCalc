@@ -11,7 +11,7 @@ function getRate(){
 function calculateCost(type, weight) {
     var cost = 0.0;
 
-    if (type == "stamped") {
+    /* if (type == "stamped") {
       switch (weight)
       case (< 1){
         cost = 0.55;
@@ -23,7 +23,7 @@ function calculateCost(type, weight) {
     } else if (type == "first-class") {
       cost = 
     }
-    var cost = $('#cost'); 
+    var cost = $('#cost');  */
 }
 
 /* 
