@@ -44,24 +44,21 @@
                 <div class="col-4 col-s-9">
                     
 					<form id="form"  method="GET"> 
-                  Enter your parcel's type:
-                  <br />
-						<input id="type" type="text" name="parcel_type" onchange="calculatePayment();">
-						<span id='reqparcel_type' style='visibility:hidden'>Fill out this field</span>
+                  Enter your parcel's type: <br />
+						<input id="type" type="text" name="parcel_type">
 						<br />
 						<br />
 						Enter your parcel's weight: <br />
-						<input id="weight" type="number" name="weight" onchange="calculatePayment();">
+						<input id="weight" type="number" name="weight">
 						<br><br>
-						<input id="clear" type="reset" name="clear" value="Clear" onclick="clearForm();">
+						<button id="clear" type="reset" name="clear" value="Clear" onclick="clearForm();"></button>
 						<br><br>
-						<input id="calculate" type="submit" name="calculate" value="Calculate" onclick="getRate();">			
+						<button id="calculate" type="submit" name="calculate" value="Calculate" onclick="getRate();"></button>	
 					</form>
 					<br /><br />
                <div id="divResults">
                   <h2>Your total cost is:</h2>
-                  <ul id="ulResults">
-                  </ul>
+                  <h3 id="cost"></h3>
                </div>
                
 				</div>
