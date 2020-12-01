@@ -11,35 +11,58 @@ function getRate(){
 function calculateCost(type, weight) {
     var cost = 0.0;
 
-    /* if (type == "stamped") {
-      switch (weight)
-      case (< 1){
-        cost = 0.55;
-      } 
+    if (type == "stamped") {
+      switch (weight){
+        case '< 1': 
+          cost = 0.55;
+        case '< 2':
+          cost = 0.7;
+        case '< 3':
+          cost = 0.85;
+        case '< 3.5':
+          cost = 1.0;
+      }  
     } else if (type == "metered") {
-      cost = 
+      switch (weight){
+        case '< 1': 
+          cost = 0.5;
+        case '< 2':
+          cost = 0.65;
+        case '< 3':
+          cost = 0.8;
+        case '< 3.5':
+          cost = 0.95;
+      }  
     } else if (type == "flats") {
-      cost = 
+      switch (weight){
+        case '< 1': 
+          cost = 0.5;
+        case '< 2':
+          cost = 0.65;
+        case '< 3':
+          cost = 0.8;
+        case '< 3.5':
+          cost = 0.95;
+      }  
     } else if (type == "first-class") {
-      cost = 
+      switch (weight){
+        case '< 1': 
+          cost = 0.5;
+        case '< 2':
+          cost = 0.65;
+        case '< 3':
+          cost = 0.8;
+        case '< 3.5':
+          cost = 0.95;
+      }  
     }
+    
     var cost = $('#cost');
     cost.empty();
-    cost.append();  */
+    cost.append();  
 }
 
 /* 
-stamped
-1	$0.55
-2	0.70
-3	0.85
-3.5	1.00
-
-metered
-1	$0.50
-2	0.65
-3	0.80
-3.5	0.95
 
 flats
 1	$1.00
@@ -70,4 +93,17 @@ first-class
 11	5.30
 12	5.30
 13	5.90 
+
+stamped
+1	$0.55
+2	0.70
+3	0.85
+3.5	1.00
+
+metered
+1	$0.50
+2	0.65
+3	0.80
+3.5	0.95
+
 */
