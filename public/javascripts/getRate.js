@@ -1,6 +1,11 @@
 function getRate(){
     // Get the value from the search box
     var searchString = $('#txtSearch').val();
+
+    var type = "";
+    var weight = 0;
+    var cost = 0;
+
     console.log('Searching for: ' + searchString);
   
     // Set up the parameters to send to the API
