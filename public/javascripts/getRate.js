@@ -1,36 +1,71 @@
 function getRate(){
-    // Get the value from the search box
-    var searchString = $('#txtSearch').val();
+    // Get the values from the form
 
-    var type = "";
-    var weight = 0;
-    var cost = 0;
-
-    console.log('Searching for: ' + searchString);
+    var type = $('#type').val();
+    var weight = $('#weight').val();
+    
+    calculateCost(type, weight);
   
-    // Set up the parameters to send to the API
-    var params = { s: searchString, apikey: '66f670e1' };
-  
-    // Use jQuery to make the get request
-    $.get('https://www.omdbapi.com/', params, function(data, status) {
-      // For debugging purposes, make a note that we're back
-      console.log('Back from server with the following results:');
-      console.log(status);
-      console.log(data);
-  
-      updateResultList(data);
-    });
   }
   
-  function updateResultList(data) {
-    if (data.Search && data.Search.length > 0) {
-      var resultList = $('#ulResults');
-      resultList.empty();
-      
-      // you could use a forEach here as well...
-      for (var i = 0; i < data.Search.length; i++) {
-        var title = data.Search[i].Title;
-        resultList.append('<li><p>' + title + '</p></li>');
-      }
+function calculateCost(type, weight) {
+    var cost = 0.0;
+
+    if (type == "stamped") {
+      switch (weight)
+      case (< 1){
+        cost = 0.55;
+      } 
+    } else if (type == "metered") {
+      cost = 
+    } else if (type == "flats") {
+      cost = 
+    } else if (type == "first-class") {
+      cost = 
     }
+    var cost = $('#cost'); 
 }
+
+/* 
+stamped
+1	$0.55
+2	0.70
+3	0.85
+3.5	1.00
+
+metered
+1	$0.50
+2	0.65
+3	0.80
+3.5	0.95
+
+flats
+1	$1.00
+2	1.20
+3	1.40
+4	1.60
+5	1.80
+6	2.00
+7	2.20
+8	2.40
+9	2.60
+10	2.80
+11	3.00
+12	3.20
+13	3.40
+
+first-class
+1	$3.80	
+2	3.80	
+3	3.80	
+4	3.80	
+5	4.60	
+6	4.60	
+7	4.60	
+8	4.60	
+9	5.30	
+10	5.30	
+11	5.30
+12	5.30
+13	5.90 
+*/

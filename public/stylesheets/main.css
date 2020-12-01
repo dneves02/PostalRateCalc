@@ -38,7 +38,7 @@ p {
   
   
   
-  button #clear, #calculate, #files {
+  #clear, #calculate, #files {
     color: white;
     background-color: #1A2B6D;
     font: normal normal bold 16px spinnaker,sans-serif ;
