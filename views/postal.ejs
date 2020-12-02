@@ -18,7 +18,8 @@
 	<link rel="stylesheet" href="./stylesheets/main.css" />
 	
     <!-- script -->
-    <script src="./javascripts/getRate.js"></script>
+	 <script src="./javascripts/getRate.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,7 @@
 
                 <div class="col-4 col-s-9">
                     
-					<form id="form"  method="GET"> 
+					 
                   Enter your parcel's type: <br />
 						<input id="type" type="text" name="parcel_type">
 						<br />
@@ -54,11 +55,11 @@
 						<button id="clear" type="reset" name="clear" value="Clear" onclick="clearForm();">Clear</button>
 						<br><br>
 						<button id="calculate" type="submit" name="calculate" value="Calculate" onclick="getRate();">Calculate</button>	
-					</form>
+					
 					<br /><br />
-               <div id="divResults">
-                  <h2>Your total cost is:</h2>
-                  <h3 id="cost"></h3>
+               <div id="divResults" style="display: inline;">
+						<h2>Your total cost is:</h2>
+						<div style="display: inline-block;" id="cost"></div>
                </div>
                
 				</div>
