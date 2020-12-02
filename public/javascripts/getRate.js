@@ -11,7 +11,7 @@ function getRate(){
   }
   
 function calculateCost(type, weight) {
-    var cost = 0.0;
+    var cost = $('#cost');
 
     if (type == "stamped") {
         switch (weight){
