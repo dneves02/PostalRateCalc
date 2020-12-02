@@ -79,7 +79,7 @@ function calculateCost(type, weight) {
 
     }
     
-    return $('#cost') = cost;
+    $('#cost').append('$' + cost);
       
 }
 
