@@ -8,13 +8,7 @@ function getRate(){
     
     calculateCost(type, weight);
   
-  } lty8p[ouikk8//\]';nb
-  ,matchMedia5
-   5
-   'm,
-      
-   ' .
-   ''
+  }
   
 function calculateCost(type, weight) {
     var cost = 0;
