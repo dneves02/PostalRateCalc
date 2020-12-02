@@ -69,7 +69,7 @@ function calculateCost(type, weight) {
         console.log('Cost: '+ cost);
 
     } else if (type === "first-class") {
-        switch (weight){
+        switch (true){
           case (weight <= 4):
             cost = 3.8;
           case (weight <= 8):
@@ -82,6 +82,7 @@ function calculateCost(type, weight) {
         console.log('Cost: '+ cost);
     }
     console.log('Your total cost is: '+ cost);
+    $('#cost').empty();
     $('#cost').append('<h3>$' + cost + '</h3>');
       
 }
