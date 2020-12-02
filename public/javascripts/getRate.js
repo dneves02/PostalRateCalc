@@ -25,58 +25,58 @@ function calculateCost(type, weight) {
             cost = 1.0;
         }
         console.log('Cost: '+ cost);  
-    } else if (type == "metered") {
-        switch (weight){
-          case '<= 1': 
+    } else if (type === "metered") {
+        switch (true){
+          case (weight <= 1): 
             cost = 0.5;
-          case '<= 2':
+          case (weight<= 2):
             cost = 0.65;
-          case '<= 3':
+          case (weight <= 3):
             cost = 0.8;
-          case '<= 3.5':
+          case (weight <= 3.5):
             cost = 0.95;
         } 
         console.log('Cost: '+ cost);  
-    } else if (type == "flats") {
-        switch (weight){
-          case '<= 1': 
+    } else if (type === "flats") {
+        switch (true){
+          case (weight <= 1): 
             cost = 1.0;
-          case '<= 2':
+          case (weight <= 2):
             cost = 1.2;
-          case '<= 3':
+          case (weight <= 3):
             cost = 1.4;
-          case '<= 4':
+          case (weight <= 4):
             cost = 1.6;
-          case '<= 5':
+          case (weight <= 5):
             cost = 1.8;
-          case '<= 6':
+          case (weight <= 6):
             cost = 2.0;
-          case '<= 7':
+          case (weight <= 7):
             cost = 2.2;
-          case '<= 8':
+          case (weight <= 8):
             cost = 2.4;
-          case '<= 9':
+          case (weight <= 9):
             cost = 2.6;
-          case '<= 10':
+          case (weight <= 10):
             cost = 2.8;
-          case '<= 11':
+          case (weight <= 11):
             cost = 3.0;
-          case '<= 12':
+          case (weight <= 12):
             cost = 3.2;
-          case '<= 13':
+          case (weight <= 13):
             cost = 3.4;
         }
         console.log('Cost: '+ cost);
 
-    } else if (type == "first-class") {
+    } else if (type === "first-class") {
         switch (weight){
-          case '<= 4':
+          case (weight <= 4):
             cost = 3.8;
-          case '<= 8':
+          case (weight <= 8):
             cost = 4.6;
-          case '<= 12':
+          case (weight <= 12):
             cost = 5.3;
-          case '<= 13':
+          case (weight <= 13):
             cost = 5.9;
         }
         console.log('Cost: '+ cost);
