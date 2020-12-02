@@ -13,15 +13,15 @@ function getRate(){
 function calculateCost(type, weight) {
     var cost = 0;
 
-    if (type == "stamped") {
-        switch (weight){
-          case '<= 1': 
+    if (type === "stamped") {
+        switch (true){
+          case (weight <= 1): 
             cost = 0.55;
-          case '<= 2':
+          case (weight <= 2):
             cost = 0.7;
-          case '<= 3':
+          case (weight <= 3):
             cost = 0.85;
-          case '<= 3.5':
+          case (weight <= 3.5):
             cost = 1.0;
         }
         console.log('Cost: '+ cost);  
