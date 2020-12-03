@@ -82,8 +82,8 @@ function calculateCost(type, weight) {
         console.log('Cost: '+ cost);
     }
     console.log('Your total cost is: '+ cost);
-    $('#cost').empty();
-    $('#cost').append('<h3>$' + cost + '</h3>');
+
+    $('#totalcost').text(' $' + cost);
       
 }
 
