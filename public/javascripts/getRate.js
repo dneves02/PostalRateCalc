@@ -1,6 +1,6 @@
 function clearForm(){
-  $('#type').val() = "";
-  $('#weight').val() = 0;
+  $('#type').val() = "stamped";
+  $('#weight').val() = "";
     console.log('Parcel type: '+ type);
     console.log('Weight: '+ weight);
 }
