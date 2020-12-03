@@ -21,13 +21,10 @@
 	 <script src="./javascripts/getRate.js"></script>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-
 <body>
     <header>
         <h2>Postal Rate Calculator</h2>
 	</header>
-
-      
     <div class="clearfix">
         <section>
 			<h1>
@@ -38,42 +35,34 @@
 				<div class="col-4 col-s-3 menu">
 					<div class="button-link-container">
 						<a href="#"><div class="button-link link-current">Postal Rate Calculator</div></a><br />
-						
 					</div>
 				</div>
-
                 <div class="col-4 col-s-9">
 						<label for="cars">Enter your parcel's type: <br /></label>
-
-						<select name="parcels" id="parcel_type">
+						<select id="type" name="parcels" id="parcel_type" style="font-size: inherit;">
 						  <option value="stamped">Stamped</option>
 						  <option value="metered">Metered</option>
 						  <option value="flats">Flats</option>
 						  <option value="first-class">First-class</option>
 						</select> 
-					 
-                  
-						
 						<br />
 						<br />
 						Enter your parcel's weight: <br />
-						<input id="weight" type="number" name="weight">
+						<input id="weight" type="number" name="weight" style="font-size: inherit;">
 						<br><br>
-						<button id="clear" type="reset" name="clear" value="Clear" onclick="clearForm();">Clear</button>
+						<a href="#"><button id="clear" type="reset" name="clear" value="Clear" onclick="clearForm();">Clear</button></a>
 						<br><br>
 						<button id="calculate" type="submit" name="calculate" value="Calculate" onclick="getRate();">Calculate</button>	
-					
-					<br /><br />
+					<br />
+					<br />
                <div id="divResults" style="display: inline;">
 						<h2>Your total cost is: <span id="totalcost"></span></h2>
 						<div style="display: inline-block;" id="cost"></div>
                </div>
-               
 				</div>
 			</div>
         </section>    
     </div>
-
     <footer>
 		<br /><br />
 		Address. xxx XXX Portland, OR xxxxx<br />
