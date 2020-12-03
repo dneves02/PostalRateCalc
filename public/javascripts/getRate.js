@@ -1,3 +1,10 @@
+function clearForm(){
+  $('#type').val() = "";
+  $('#weight').val() = 0;
+    console.log('Parcel type: '+ type);
+    console.log('Weight: '+ weight);
+}
+
 function getRate(){
     // Get the values from the form
 
