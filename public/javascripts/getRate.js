@@ -82,9 +82,9 @@ function calculateCost(type, weight) {
         console.log('Cost: '+ cost);
     }
     var totalCost = parseFloat(cost).toFixed( 2 );
-    console.log('Your total cost is: '+ cost);
+    console.log('Your total cost is: '+ totalCost);
 
-    $('#totalcost').text(' $' + cost);
+    $('#totalcost').text(' $' + totalCost);
       
 }
 
